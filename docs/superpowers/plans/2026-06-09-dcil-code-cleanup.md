@@ -16,9 +16,9 @@
 - Create: `tests/test_repository_contract.py`
 
 - [x] Write tests that fail until the repository exposes DCIL names, removes old SGIL/HIL files, and documents the paper workflow.
-- [ ] Run `python tests/test_repository_contract.py` or an equivalent unittest/pytest command and confirm red failure.
-- [ ] Implement repository cleanup and DCIL files.
-- [ ] Run the contract tests and syntax checks until green.
+- [x] Run `python tests/test_repository_contract.py` or an equivalent unittest/pytest command and confirm red failure.
+- [x] Implement repository cleanup and DCIL files.
+- [x] Run the contract tests and syntax checks until green.
 - [ ] Commit the verified stage.
 
 ### Task 2: DCIL Implementation
@@ -27,10 +27,10 @@
 - Create/modify: `models/base_model.py`, `models/lightgcn_s.py`, `models/view_generator.py`, `models/dcil.py`, `models/__init__.py`
 - Modify: `run_DCIL.py`, `utils/rec_dataset.py`, `README.md`, `.gitignore`, `requirements.txt`
 
-- [ ] Implement paper-aligned names: `BaseCF`, `LightGCNS`, `SocialAwareViewGenerator`, `DCIL`.
-- [ ] Implement semantic social intensity coefficients, Gumbel-Softmax masks, RC loss, PC loss, and InfoNCE recommendation loss.
-- [ ] Keep training/evaluation lightweight and compatible with `douban_book`, `yelp`, and `epinions`.
-- [ ] Remove legacy TensorFlow SGIL, HIL experiments, pycache, and notebook checkpoint files from the main repo.
+- [x] Implement paper-aligned names: `BaseCF`, `LightGCNS`, `SocialAwareViewGenerator`, `DCIL`.
+- [x] Implement semantic social intensity coefficients, Gumbel-Softmax masks, RC loss, PC loss, and InfoNCE recommendation loss.
+- [x] Keep training/evaluation lightweight and compatible with `douban_book`, `yelp`, and `epinions`.
+- [x] Remove legacy TensorFlow SGIL, HIL experiments, pycache, and notebook checkpoint files from the main repo.
 - [ ] Commit the verified stage.
 
 ### Task 3: GitHub Handoff

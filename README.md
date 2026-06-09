@@ -46,6 +46,15 @@ python run_DCIL.py --dataset douban_book --runid 0 --num_views 4 --lambda_rc 1.0
 
 Common paper settings are encoded as defaults: embedding dimension 64, LightGCN layers 3, batch size 2048, learning rate 0.001, Gumbel temperature 0.2, and observation bias 0.5.
 
+## Verify
+
+The repository includes a lightweight contract test runner that does not require pytest:
+
+```bash
+python tests/run_contract_tests.py
+```
+
+Use it after structural edits to confirm the codebase still exposes the paper-aligned DCIL API and no legacy SGIL/HIL mainline files have returned.
 ## Notes
 
 The public API intentionally uses paper method names (`DCIL`, `SocialAwareViewGenerator`, `LightGCNS`, `BaseCF`) instead of the older reused SGIL/HIL names.
